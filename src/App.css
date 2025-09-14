@@ -5,6 +5,9 @@
   flex-direction: column;
   align-items: center;
 }
+body{
+  overflow-x:hidden;
+}
 .title{
   display: flex;
   gap:2rem;
@@ -26,14 +29,17 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background: #ffffff; /* clean, modern background */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* subtle shadow for depth */
   padding: 1rem 1.5rem; /* slightly larger padding for comfort */
-  position: relative;
+  position: fixed;
+  top:0;
+  left:0;
   border-radius: 12px; /* smooth corners */
   gap: 2rem; /* space between items */
   transition: all 0.3s ease; /* smooth hover effects if added */
+  width: 100%;
+  height: 10%;
 }
 
 /* Optional: Hover effect to make it feel interactive */
@@ -188,11 +194,12 @@
 }
 .hamburger {
   flex-shrink: 0;
+  cursor: pointer;
 }
 /* Sidebar container */
 .sidebar {
   position: fixed;
-  width: 15%;
+  width: 17%;
   top: 0;
   left: 0;
   height: 100vh;
@@ -241,11 +248,13 @@
   margin: 0;
   padding: 0;
   flex-grow: 1;
+
 }
 
 .sidebar li {
   padding: 0.9rem 1.2rem;
   cursor: pointer;
+  font-size: medium;
 }
 
 .sidebar li:hover {

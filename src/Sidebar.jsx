@@ -5,7 +5,7 @@ function Sidebar({ onClose, navItems = [], selectedPage, onSelectPage }) {
   return (
     <nav className="sidebar">
       <div className="sidebar-header">
-        <h2 className="sidebar-title">Energy Monitor</h2>
+        <h2 className="sidebar-title">Energy Flow</h2>
         <button
           className="close-sidebar"
           aria-label="Close sidebar"
