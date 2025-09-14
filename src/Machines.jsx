@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import machineImage from '../public/machine.svg'
 const machinesData = [
   {
     id: 1,
@@ -30,7 +30,7 @@ const machinesData = [
 function MachineCard({ machine, toggleMachine }) {
   return (
     <div className="machine-card">
-      <img src="public/machine.svg" alt={machine.name} className="machine-logo" />
+      <img src={machineImage} alt={machine.name} className="machine-logo" />
       <div className="machine-info">
         <h4>{machine.name}</h4>
         <p>Power: {machine.power} kW</p>
