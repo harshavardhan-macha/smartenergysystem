@@ -369,6 +369,9 @@ body{
 
 /* 🔹 Responsive Layouts */
 @media (min-width: 768px) {
+  .filter-container{
+    margin-top:250px;
+  }
   .filter-form {
     flex-direction: row;
     align-items: flex-end;
