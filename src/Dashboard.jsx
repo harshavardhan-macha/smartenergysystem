@@ -18,11 +18,11 @@ function Dashboard({ sidebarOpen, toggleSidebar, selectedPage, onSelectPage }) {
   if (selectedPage === 'Dashboard') {
     mainContent = (
       <>
-        <div className="cards-row">
+        <div class="cards-row">
           <EnergyUsageCard />
           <Suggestions />
         </div>
-        <div className="lower-row">
+        <div class="lower-row">
           <UsageGraph />
           <HistoricalLogs />
         </div>
@@ -35,10 +35,10 @@ function Dashboard({ sidebarOpen, toggleSidebar, selectedPage, onSelectPage }) {
   }
 
   return (
-    <div className="dashboard-container">
+    <div class="dashboard-container">
       {sidebarOpen && (
         <>
-          <div className="sidebar-overlay" onClick={toggleSidebar}></div>
+          <div class="sidebar-overlay" onClick={toggleSidebar}></div>
           <Sidebar
             onClose={toggleSidebar}
             navItems={navItems}
@@ -47,7 +47,7 @@ function Dashboard({ sidebarOpen, toggleSidebar, selectedPage, onSelectPage }) {
           />
         </>
       )}
-      <div className="main-content">
+      <div class="main-content">
         <Header toggleSidebar={toggleSidebar} />
         {mainContent}
       </div>
