@@ -1,7 +1,7 @@
 function Suggestions() {
   // Replace with dynamic suggestions
   const tips = [
-    "Turn off Machine X after 5 PM",
+    "Turn off Compressors after 5 PM",
     "Set standby mode during idle hours",
     "Regularly maintain sensors for accuracy",
   ];

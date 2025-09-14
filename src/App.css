@@ -28,13 +28,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
-  box-shadow: none;
-  padding: 0.8rem 1.2rem;
+  background: #ffffff; /* clean, modern background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* subtle shadow for depth */
+  padding: 1rem 1.5rem; /* slightly larger padding for comfort */
   position: relative;
-  min-height: 1px;
-  gap : 5%;
+  border-radius: 12px; /* smooth corners */
+  gap: 2rem; /* space between items */
+  transition: all 0.3s ease; /* smooth hover effects if added */
 }
+
+/* Optional: Hover effect to make it feel interactive */
+.header:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
 
 .status-indicator {
   display: inline-flex;
@@ -441,4 +448,103 @@
     font-size: 11px;
   }
 }
+.machines-container {
+  padding: 2rem;
+  background: #f5f6fa; /* light background for contrast */
+  border-radius: 16px;
+  max-width: 1200px; /* wider container */
+  margin: 2rem auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
 
+.machines-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.machines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.8rem;
+}
+
+.machine-card {
+  display: flex;
+  flex-direction: row; /* stacked on smaller screens */
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.machine-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.machine-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.machine-info h4 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.machine-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.toggle-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.toggle-btn.on {
+  background: #4caf50;
+  color: #fff;
+}
+
+.toggle-btn.off {
+  background: #f44336;
+  color: #fff;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 600px) {
+  .machines-container {
+    padding: 1rem;
+  }
+
+  .machine-card {
+    padding: 1rem;
+  }
+
+  .machine-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .toggle-btn {
+    padding: 0.5rem 1rem;
+  }
+}
