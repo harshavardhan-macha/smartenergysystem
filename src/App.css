@@ -251,3 +251,27 @@
   border-left: 4px solid #facc15;
   padding-left: calc(1.2rem - 4px);
 }
+/* Default (desktop) sidebar */
+.sidebar {
+  transform: translateX(0);
+}
+
+/* Hidden sidebar state (when closed) */
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80%; /* take most of the screen */
+    max-width: 300px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%; /* full width */
+  }
+}
