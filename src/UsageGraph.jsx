@@ -1,4 +1,26 @@
-import { Line } from "react-chartjs-2";
+import {
+  Chart,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
+Chart.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 function UsageGraph() {
   const data = {
     labels: ["9 AM", "10 AM", "11 AM", "12 PM", "1 PM"],
@@ -16,7 +38,7 @@ function UsageGraph() {
   return (
     <div className="usage-graph">
       <h3>Historical Usage</h3>
-      {/* <Line data={data} /> */}
+      <Line data={data} />
     </div>
   );
 }
