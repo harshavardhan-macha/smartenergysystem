@@ -46,14 +46,13 @@
   flex-shrink: 0;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1.5rem 2rem;
   background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 0; /* remove rounded corners if full width */
+  border-radius: 0; 
   margin-bottom: 20px;
   top: 0;
   left: 0;
-  position: sticky; /* header sticks to top */
+  position: sticky;
 }
 
 /* Dashboard Title */
@@ -120,5 +119,14 @@
 }
 
 .usage-card, .suggestions-card, .usage-graph, .historical-logs {
-  color: #222; /* Darker text */
+  color: #000000; /* Darker text */
+  margin-top: 1.5rem;
+}
+
+.footer {
+  background-color: white;
+  margin-top: 2rem;
+  display: flex;
+  padding:2%;
+  gap: 80%;
 }
