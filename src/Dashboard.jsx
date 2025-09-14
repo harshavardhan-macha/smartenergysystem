@@ -5,6 +5,7 @@ import HistoricalLogs from './HistoricalLogs'
 import Header from './Header'
 import Sidebar from './Sidebar'
 import Machines from './Machines'
+import Settings from './Settings'
 function Dashboard({ sidebarOpen, toggleSidebar, selectedPage, onSelectPage }) {
   // Sidebar navigation items
   const navItems = [
@@ -31,7 +32,7 @@ function Dashboard({ sidebarOpen, toggleSidebar, selectedPage, onSelectPage }) {
   } else if (selectedPage === 'Machines') {
     mainContent = <Machines/>;
   } else if (selectedPage === 'Settings') {
-    mainContent = <div style={{padding: '2rem'}}>Settings page content goes here.</div>;
+    mainContent = <Settings/>;
   }
 
   return (
