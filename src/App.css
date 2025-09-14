@@ -23,16 +23,14 @@
 
 .header {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   background: transparent;
   box-shadow: none;
-  padding: 0;
+  padding: 0.8rem 1.2rem;
   position: relative;
   min-height: 1px;
   gap : 5%;
-  padding : 0.2%;
 }
 
 .status-indicator {
@@ -178,4 +176,7 @@
     text-align: center;
     gap: 0.75rem;
   }
+}
+.hamburger {
+  flex-shrink: 0;
 }

@@ -4,7 +4,7 @@ function Header({ toggleSidebar }) {
   return (
     <header class="header">
       <button
-        className="hamburger"
+        class="hamburger"
         aria-label="Open sidebar"
         onClick={toggleSidebar}
       >
