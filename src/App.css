@@ -180,3 +180,74 @@
 .hamburger {
   flex-shrink: 0;
 }
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  width: 15%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #1e293b; /* dark slate */
+  color: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Sidebar header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin: 0;
+}
+
+/* Close button */
+.close-sidebar {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #f8fafc;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-sidebar:hover {
+  color: #facc15; /* yellow-400 */
+}
+
+/* Sidebar navigation */
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.sidebar li {
+  padding: 0.9rem 1.2rem;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #334155; /* lighter slate */
+  color: #facc15; /* yellow highlight */
+}
+
+.sidebar li.selected {
+  background-color: #475569; /* selected darker slate */
+  color: #facc15;
+  font-weight: 600;
+  border-left: 4px solid #facc15;
+  padding-left: calc(1.2rem - 4px);
+}
