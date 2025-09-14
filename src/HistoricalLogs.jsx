@@ -6,7 +6,7 @@ function HistoricalLogs() {
     { time: "11:00", usage: "2.2 kWh" },
   ];
   return (
-    <div className="historical-logs">
+  <div class="historical-logs">
       <h3>Usage Logs</h3>
       <table>
         <thead>

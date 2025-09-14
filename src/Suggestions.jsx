@@ -6,7 +6,7 @@ function Suggestions() {
     "Regularly maintain sensors for accuracy",
   ];
   return (
-    <div className="suggestions-card">
+  <div className="suggestions-card">
       <h3>Energy Saving Tips</h3>
       <ul>
         {tips.map(tip => <li key={tip}>{tip}</li>)}

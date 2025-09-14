@@ -36,7 +36,7 @@ function UsageGraph() {
     ],
   };
   return (
-    <div className="usage-graph">
+  <div className="usage-graph">
       <h3>Historical Usage</h3>
       <Line data={data} />
     </div>
