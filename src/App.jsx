@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Dashboard from "./Dashboard";
-import './app.css'
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedPage, setSelectedPage] = useState('Dashboard');
