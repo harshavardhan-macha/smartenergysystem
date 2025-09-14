@@ -4,7 +4,6 @@ import UsageGraph from './UsageGraph'
 import HistoricalLogs from './HistoricalLogs'
 import Header from './Header'
 import Sidebar from './Sidebar'
-import './App.css'
 function Dashboard({ sidebarOpen, toggleSidebar, selectedPage, onSelectPage }) {
   // Sidebar navigation items
   const navItems = [
